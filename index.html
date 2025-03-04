@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Train Fare Guide</title>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;700&display=swap" rel="stylesheet">
+
     <script defer src="script.js"></script>
+
     <style>
         body {
             background-color: #E6F6FF;
@@ -144,9 +147,12 @@
                 margin-bottom: 20px;
             }
         }
+
     </style>
+
 </head>
 <body>
+
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Train Fare Guide</a>
@@ -159,12 +165,12 @@
                     <li class="nav-item"><a class="nav-link" href="page1.html">Train Schedule</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                 </ul>
-            </div>
-        </div>
-    </nav>
+                </div>
+                </div>
+                </nav>
     
     <div class="container">
-        <h1>Welcome to the Train Fare Guide</h1>
+        <h1> <b> Welcome to the Train Fare Guide </b> </h1>
         
         <div class="content-wrapper">
             <div class="image-left">
@@ -202,18 +208,18 @@
                 
                 <div class="ticket-info">
                     <div class="ticket-price">
-                        <h2>Ticket Price: <span id="fare">Please select your route</span></h2>
+                        <h2> <b> Ticket Price: </b> <span id="fare">Please select your route</span></h2>
                     </div>
                     <div class="ticket-image">
                         <img src="https://via.placeholder.com/120" alt="Ticket">
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
 
     <footer class="footer">
-        <p>&copy; 2024 Student Name | Grade & Section</p>
+        <p>&copy; 2024 Quinto , Gutierrez | Grade 9 - Sapphire</p>
     </footer>
 
     <script>
@@ -229,7 +235,7 @@
                 "120-134": 40,
                 "120-178": 90,
                 "134-178": 60
-            };
+            }
 
             const from = document.getElementById("from").value;
             const to = document.getElementById("to").value;
@@ -239,7 +245,7 @@
             const isPWD = document.getElementById("pwd").value === "yes";
 
             if (fare !== "Route not available" && isPWD) {
-                fare = fare * 0.8; // Apply 20% discount
+                fare = fare * 0.8;
             }
 
             document.getElementById("fare").textContent = fare === "Route not available" ? fare : `Php ${fare.toFixed(2)}`;
