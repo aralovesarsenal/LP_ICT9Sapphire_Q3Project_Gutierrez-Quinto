@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Fare Guide - Train Schedule</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            background-color: #E6F6FF;
+            color: #2E2E2E;
+            font-family: 'Fredoka', sans-serif;
+            text-align: center;
+        }
+        .navbar {
+            background-color: #A3D8FF;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .footer {
+            background-color: #A3D8FF;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+            padding: 20px;
+            background: #BEE6FF;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(163, 216, 255, 0.5);
+            max-width: 1200px;
+            width: 100%;
+        }
+        h1 {
+            font-size: 2.5rem;
+        }
+        table {
+            width: 100%;
+            margin-top: 30px;
+            border-collapse: collapse;
+            text-align: left;
+        }
+        th, td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #A3D8FF;
+        }
+        .btn {
+            background-color: #77B9FF;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            transition: 0.3s;
+            padding: 12px 25px;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background-color: #4B98E6;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Train Fare Guide</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page1.html">Train Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page2.html">Fare Calculation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <h1>Train Schedule</h1>
+        <p>Here is the train schedule for various stations.</p>
+        
+        <!-- Schedule Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Departure Station</th>
+                    <th>Arrival Station</th>
+                    <th>Departure Time</th>
+                    <th>Arrival Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>North Ave</td>
+                    <td>Taft</td>
+                    <td>06:00 AM</td>
+                    <td>06:30 AM</td>
+                </tr>
+                <tr>
+                    <td>Taft</td>
+                    <td>Alabang</td>
+                    <td>07:00 AM</td>
+                    <td>07:45 AM</td>
+                </tr>
+                <tr>
+                    <td>Alabang</td>
+                    <td>Rizal</td>
+                    <td>08:00 AM</td>
+                    <td>08:30 AM</td>
+                </tr>
+                <tr>
+                    <td>Rizal</td>
+                    <td>Cavite</td>
+                    <td>09:00 AM</td>
+                    <td>09:45 AM</td>
+                </tr>
+                <tr>
+                    <td>Cavite</td>
+                    <td>North Ave</td>
+                    <td>10:00 AM</td>
+                    <td>10:45 AM</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button class="btn" onclick="window.location.href='page2.html'">Check Fare</button>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Student Name | Grade & Section</p>
+    </footer>
+</body>
+</html>
